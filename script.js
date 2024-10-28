@@ -78,7 +78,7 @@ Des_largo.onclick= function (){
         })
                 //con el setattribute sustituimos los atributos de los elementos html 
         html.setAttribute('data-contexto',contexto)
-        imagen.setAttribute('src',`/img/${contexto}.png` )
+        imagen.setAttribute('src',`./img/${contexto}.png` )
         
         
 
@@ -122,7 +122,7 @@ Des_largo.onclick= function (){
                             
         Tiempo_trascurrido -= 1 //va descontale 1Seg a la variable que esta establecida en 1500 o 300 o 900 segun sea el caso
         console.log("tiempo"+ Tiempo_trascurrido);
-        imageniniciopausa.setAttribute('src','/img/pause.png')
+        imageniniciopausa.setAttribute('src','./img/pause.png')
         Textoiniciopausa.textContent= "pausar"  //la funcionalidad texContent solo recibe texto a diferencia de innerHTML que recibe las etiquetas html y los template stream
         mostrarTiempo()
         
@@ -147,7 +147,7 @@ function Reiniciar(){
     clearInterval(idIntervalo)// detiene el setinterval y por tanto la funcion cuentaRegresiva
     idIntervalo = null 
     Textoiniciopausa.textContent= "comenzar"
-    imageniniciopausa.setAttribute('src','/img/play_arrow.png')
+    imageniniciopausa.setAttribute('src','./img/play_arrow.png')
 }
 
 
